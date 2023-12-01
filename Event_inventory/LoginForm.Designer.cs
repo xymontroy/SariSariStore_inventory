@@ -29,66 +29,37 @@ namespace Event_inventory
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.unamebox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.passbox = new System.Windows.Forms.TextBox();
             this.loginbtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(319, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Login";
             // 
             // unamebox
             // 
-            this.unamebox.Location = new System.Drawing.Point(263, 144);
+            this.unamebox.Location = new System.Drawing.Point(151, 185);
             this.unamebox.Name = "unamebox";
             this.unamebox.Size = new System.Drawing.Size(250, 22);
             this.unamebox.TabIndex = 1;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(155, 141);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Username";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(155, 193);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Password";
-            // 
             // passbox
             // 
-            this.passbox.Location = new System.Drawing.Point(263, 196);
+            this.passbox.Location = new System.Drawing.Point(151, 247);
             this.passbox.Name = "passbox";
             this.passbox.PasswordChar = '*';
             this.passbox.Size = new System.Drawing.Size(250, 22);
             this.passbox.TabIndex = 3;
+            this.passbox.TextChanged += new System.EventHandler(this.passbox_TextChanged);
             // 
             // loginbtn
             // 
-            this.loginbtn.Location = new System.Drawing.Point(287, 258);
+            this.loginbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginbtn.Location = new System.Drawing.Point(151, 310);
             this.loginbtn.Name = "loginbtn";
-            this.loginbtn.Size = new System.Drawing.Size(174, 36);
+            this.loginbtn.Size = new System.Drawing.Size(250, 36);
             this.loginbtn.TabIndex = 5;
             this.loginbtn.Text = "LOGIN";
             this.loginbtn.UseVisualStyleBackColor = true;
@@ -97,28 +68,63 @@ namespace Event_inventory
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(297, 323);
+            this.label4.Font = new System.Drawing.Font("Microsoft Uighur", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(205, 360);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(152, 25);
+            this.label4.Size = new System.Drawing.Size(117, 27);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Register here.....";
+            this.label4.Text = "SIGN UP HERE....";
             this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(212, 91);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "LOGIN";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(147, 158);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 24);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "USERNAME";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(147, 220);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 24);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "PASSWORD";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(565, 453);
+            this.ControlBox = false;
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.loginbtn);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.passbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.unamebox);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LoginForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
             this.ResumeLayout(false);
@@ -127,13 +133,12 @@ namespace Event_inventory
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox unamebox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox passbox;
         private System.Windows.Forms.Button loginbtn;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

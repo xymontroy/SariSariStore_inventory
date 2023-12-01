@@ -70,6 +70,16 @@ namespace Event_inventory
                 }
             }
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            LoginForm form = new LoginForm();
+            // Show Form2
+            form.Show();
+
+            // Optionally, you can hide Form1 if needed
+            this.Hide();
+        }
     }
 
 }

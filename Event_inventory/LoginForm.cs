@@ -80,5 +80,15 @@ namespace Event_inventory
             // Optionally, you can hide Form1 if needed
             this.Hide();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void passbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
