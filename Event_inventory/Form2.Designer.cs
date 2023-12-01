@@ -56,10 +56,13 @@ namespace Event_inventory
             this.label14 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBoxQRCode = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxScannedBarcode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQRCode)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +71,7 @@ namespace Event_inventory
             this.label1.Font = new System.Drawing.Font("Verdana", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(259, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(337, 41);
+            this.label1.Size = new System.Drawing.Size(325, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "POINT OF SALES";
             // 
@@ -113,7 +116,8 @@ namespace Event_inventory
             // 
             // btnScanBarcode_Click
             // 
-            this.btnScanBarcode_Click.Location = new System.Drawing.Point(136, 385);
+            this.btnScanBarcode_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScanBarcode_Click.Location = new System.Drawing.Point(136, 406);
             this.btnScanBarcode_Click.Name = "btnScanBarcode_Click";
             this.btnScanBarcode_Click.Size = new System.Drawing.Size(219, 31);
             this.btnScanBarcode_Click.TabIndex = 12;
@@ -146,7 +150,8 @@ namespace Event_inventory
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(136, 482);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(136, 501);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(219, 31);
             this.button1.TabIndex = 18;
@@ -156,7 +161,8 @@ namespace Event_inventory
             // 
             // newbutton
             // 
-            this.newbutton.Location = new System.Drawing.Point(136, 431);
+            this.newbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newbutton.Location = new System.Drawing.Point(136, 452);
             this.newbutton.Name = "newbutton";
             this.newbutton.Size = new System.Drawing.Size(219, 31);
             this.newbutton.TabIndex = 19;
@@ -185,7 +191,7 @@ namespace Event_inventory
             // lblTotalAmount
             // 
             this.lblTotalAmount.AutoSize = true;
-            this.lblTotalAmount.Location = new System.Drawing.Point(267, 261);
+            this.lblTotalAmount.Location = new System.Drawing.Point(267, 267);
             this.lblTotalAmount.Name = "lblTotalAmount";
             this.lblTotalAmount.Size = new System.Drawing.Size(100, 17);
             this.lblTotalAmount.TabIndex = 25;
@@ -193,14 +199,15 @@ namespace Event_inventory
             // 
             // txtAmountPaid
             // 
-            this.txtAmountPaid.Location = new System.Drawing.Point(136, 291);
+            this.txtAmountPaid.Location = new System.Drawing.Point(136, 310);
             this.txtAmountPaid.Name = "txtAmountPaid";
             this.txtAmountPaid.Size = new System.Drawing.Size(219, 22);
             this.txtAmountPaid.TabIndex = 26;
             // 
             // btnPay
             // 
-            this.btnPay.Location = new System.Drawing.Point(136, 337);
+            this.btnPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPay.Location = new System.Drawing.Point(136, 358);
             this.btnPay.Name = "btnPay";
             this.btnPay.Size = new System.Drawing.Size(219, 31);
             this.btnPay.TabIndex = 27;
@@ -211,7 +218,7 @@ namespace Event_inventory
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(38, 291);
+            this.label9.Location = new System.Drawing.Point(38, 310);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(92, 17);
             this.label9.TabIndex = 28;
@@ -231,7 +238,7 @@ namespace Event_inventory
             this.panel1.Controls.Add(this.btnScanBarcode_Click);
             this.panel1.Location = new System.Drawing.Point(433, 75);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(421, 548);
+            this.panel1.Size = new System.Drawing.Size(421, 574);
             this.panel1.TabIndex = 29;
             // 
             // label6
@@ -326,11 +333,31 @@ namespace Event_inventory
             this.panel2.Size = new System.Drawing.Size(358, 412);
             this.panel2.TabIndex = 37;
             // 
+            // pictureBoxQRCode
+            // 
+            this.pictureBoxQRCode.Location = new System.Drawing.Point(91, 511);
+            this.pictureBoxQRCode.Name = "pictureBoxQRCode";
+            this.pictureBoxQRCode.Size = new System.Drawing.Size(213, 138);
+            this.pictureBoxQRCode.TabIndex = 38;
+            this.pictureBoxQRCode.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Uighur", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(137, 652);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 27);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "QrCode Receipt";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(980, 694);
+            this.ClientSize = new System.Drawing.Size(980, 707);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBoxQRCode);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -343,6 +370,7 @@ namespace Event_inventory
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQRCode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,5 +405,7 @@ namespace Event_inventory
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBoxQRCode;
+        private System.Windows.Forms.Label label4;
     }
 }

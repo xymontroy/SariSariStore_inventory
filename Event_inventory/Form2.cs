@@ -5,6 +5,8 @@ using System.Data.OleDb;
 using System.Drawing;
 using System.Windows.Forms;
 using ZXing;
+using System.Text;
+
 
 
 namespace Event_inventory
@@ -29,8 +31,10 @@ namespace Event_inventory
             // Add a DataGridView to display scanned items
             DataGridViewTextBoxColumn colItemName = new DataGridViewTextBoxColumn();
             colItemName.HeaderText = "Item Name";
+            colItemName.Name = "colItemName"; // Set the column name
             DataGridViewTextBoxColumn colItemPrice = new DataGridViewTextBoxColumn();
             colItemPrice.HeaderText = "Item Price";
+            colItemPrice.Name = "colItemPrice"; // Set the column name
 
             dataGridView1.Columns.Add(colItemName);
             dataGridView1.Columns.Add(colItemPrice);
@@ -313,6 +317,10 @@ namespace Event_inventory
             dataGridView1.Rows.Clear();
             lblTotalAmount.Text = "Total Amount: 0";
             pictureBoxScannedBarcode.Image = null;
+            pictureBoxQRCode.Image = null;
+
+            ClearPOS();
+
         }
 
         private void ClearPOS()
@@ -333,7 +341,7 @@ namespace Event_inventory
             expirationDate.Text = string.Empty;
 
             pictureBoxScannedBarcode.Image = null;
-
+            pictureBoxQRCode.Image = null;
         }
 
 
@@ -342,9 +350,9 @@ namespace Event_inventory
             if (int.TryParse(txtAmountPaid.Text, out int amountPaid))
             {
                 int change = amountPaid - totalAmount;
-                MessageBox.Show($"Change: {change}");
 
-                ClearPOS();
+                // Show the custom message box
+                ShowCustomMessageBox(change);
             }
             else
             {
@@ -352,5 +360,80 @@ namespace Event_inventory
             }
 
         }
+
+        private void ShowCustomMessageBox(int change)
+        {
+            // Create a custom message box with additional buttons
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show($"Change:₱ {change}\nDo you want to print the receipt?", "Payment Successful", buttons);
+
+            // Process the result of the message box
+            if (result == DialogResult.Yes)
+            {
+                // Print receipt
+                GenerateQRCode();
+            }
+            else if (result == DialogResult.No)
+            {
+                // Do nothing or add additional logic
+            }
+        }
+
+
+        private void GenerateQRCode()
+        {
+            // Create a StringBuilder to build the content for the QR code
+            StringBuilder qrContent = new StringBuilder();
+
+            // Add receipt information to the content
+            qrContent.AppendLine($"Receipt Number: {GenerateRandomReceiptNumber()}");
+            qrContent.AppendLine("Items:");
+
+            int totalAmount = 0;
+
+            // Iterate through the rows of dataGridView1
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                // Check if the row is not the new row
+                if (!row.IsNewRow)
+                {
+                    string itemName = row.Cells["colItemName"].Value.ToString();
+                    int itemPrice = Convert.ToInt32(row.Cells["colItemPrice"].Value);
+                    totalAmount += itemPrice;
+
+                    qrContent.AppendLine($"{itemName}: ${itemPrice}");
+                }
+            }
+
+            int amountPaid;
+            if (int.TryParse(txtAmountPaid.Text, out amountPaid))
+            {
+                int change = amountPaid - totalAmount;
+                qrContent.AppendLine($"Total Amount: ${totalAmount}");
+                qrContent.AppendLine($"Amount Paid: ${amountPaid}");
+                qrContent.AppendLine($"Change: ${change}");
+            }
+
+            // Convert the content to a string
+            string qrString = qrContent.ToString();
+
+            // Generate QR code
+            BarcodeWriter barcodeWriter = new BarcodeWriter();
+            barcodeWriter.Format = BarcodeFormat.QR_CODE;
+            var barcodeBitmap = barcodeWriter.Write(qrString);
+
+            // Display the QR code or save it as needed
+            pictureBoxQRCode.Image = barcodeBitmap;
+        }
+
+
+
+        private string GenerateRandomReceiptNumber()
+        {
+            Random random = new Random();
+            return $"R-{random.Next(1000, 9999)}";
+        }
+
+
     }
 }

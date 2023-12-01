@@ -57,6 +57,7 @@ namespace Event_inventory
             // 
             // btnStartScanning
             // 
+            this.btnStartScanning.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStartScanning.Location = new System.Drawing.Point(73, 231);
             this.btnStartScanning.Name = "btnStartScanning";
             this.btnStartScanning.Size = new System.Drawing.Size(196, 34);
@@ -93,6 +94,7 @@ namespace Event_inventory
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(73, 276);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(196, 34);
