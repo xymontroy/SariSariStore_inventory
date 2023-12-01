@@ -41,9 +41,9 @@ namespace Event_inventory
             // 
             // loginbtn
             // 
-            this.loginbtn.Location = new System.Drawing.Point(296, 325);
+            this.loginbtn.Location = new System.Drawing.Point(314, 322);
             this.loginbtn.Name = "loginbtn";
-            this.loginbtn.Size = new System.Drawing.Size(170, 46);
+            this.loginbtn.Size = new System.Drawing.Size(170, 36);
             this.loginbtn.TabIndex = 11;
             this.loginbtn.Text = "REGISTER";
             this.loginbtn.UseVisualStyleBackColor = true;
@@ -115,6 +115,7 @@ namespace Event_inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.mailbox);

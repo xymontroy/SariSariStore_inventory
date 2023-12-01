@@ -88,7 +88,7 @@ namespace Event_inventory
             // 
             this.loginbtn.Location = new System.Drawing.Point(287, 258);
             this.loginbtn.Name = "loginbtn";
-            this.loginbtn.Size = new System.Drawing.Size(170, 46);
+            this.loginbtn.Size = new System.Drawing.Size(174, 36);
             this.loginbtn.TabIndex = 5;
             this.loginbtn.Text = "LOGIN";
             this.loginbtn.UseVisualStyleBackColor = true;
@@ -98,17 +98,18 @@ namespace Event_inventory
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(319, 328);
+            this.label4.Location = new System.Drawing.Point(297, 323);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 25);
+            this.label4.Size = new System.Drawing.Size(152, 25);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Register.....";
+            this.label4.Text = "Register here.....";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.loginbtn);

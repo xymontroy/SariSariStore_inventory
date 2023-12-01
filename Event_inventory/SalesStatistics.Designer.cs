@@ -40,6 +40,7 @@ namespace Event_inventory
             // 
             // chart1
             // 
+            this.chart1.BackColor = System.Drawing.Color.Moccasin;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
@@ -70,7 +71,7 @@ namespace Event_inventory
             this.button2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(332, 540);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 28);
+            this.button2.Size = new System.Drawing.Size(184, 34);
             this.button2.TabIndex = 3;
             this.button2.Text = "Menu";
             this.button2.UseVisualStyleBackColor = true;
@@ -80,6 +81,7 @@ namespace Event_inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(877, 611);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
