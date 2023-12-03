@@ -116,6 +116,7 @@ namespace Event_inventory
             this.Controls.Add(this.btnStartScanning);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtScannedBarcode);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Scanning";
             this.Text = "Scanning";
             ((System.ComponentModel.ISupportInitialize)(this.picCamera)).EndInit();
