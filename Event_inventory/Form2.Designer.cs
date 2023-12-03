@@ -236,7 +236,7 @@ namespace Event_inventory
             this.panel1.Controls.Add(this.pictureBoxScannedBarcode);
             this.panel1.Controls.Add(this.lblTotalAmount);
             this.panel1.Controls.Add(this.btnScanBarcode_Click);
-            this.panel1.Location = new System.Drawing.Point(433, 75);
+            this.panel1.Location = new System.Drawing.Point(474, 75);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(421, 574);
             this.panel1.TabIndex = 29;
@@ -264,7 +264,7 @@ namespace Event_inventory
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(39, 228);
+            this.label11.Location = new System.Drawing.Point(39, 226);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(131, 21);
             this.label11.TabIndex = 34;
@@ -344,10 +344,10 @@ namespace Event_inventory
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Uighur", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(137, 652);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 27);
+            this.label4.Size = new System.Drawing.Size(152, 25);
             this.label4.TabIndex = 39;
             this.label4.Text = "QrCode Receipt";
             // 
