@@ -68,7 +68,7 @@ namespace Event_inventory
             this.reportsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(769, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(769, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -154,7 +154,7 @@ namespace Event_inventory
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(284, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 39);
+            this.label1.Size = new System.Drawing.Size(194, 38);
             this.label1.TabIndex = 1;
             this.label1.Text = "WELCOME";
             // 
@@ -216,22 +216,23 @@ namespace Event_inventory
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Uighur", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(73, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 27);
+            this.label4.Size = new System.Drawing.Size(223, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Product Expiration Chart";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Uighur", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(73, 360);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 27);
+            this.label2.Size = new System.Drawing.Size(125, 25);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Stoks Chart";
+            this.label2.Text = "Stocks Chart";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form3
             // 
