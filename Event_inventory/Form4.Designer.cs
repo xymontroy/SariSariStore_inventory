@@ -39,6 +39,7 @@ namespace Event_inventory
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Yu Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(166, 100);
             this.label1.Name = "label1";
@@ -50,6 +51,7 @@ namespace Event_inventory
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(225, 215);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 17);
@@ -71,7 +73,7 @@ namespace Event_inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(514, 286);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label2);

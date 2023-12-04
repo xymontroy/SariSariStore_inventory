@@ -42,6 +42,9 @@ namespace Event_inventory
             // 
             // loginbtn
             // 
+            this.loginbtn.BackgroundImage = global::Event_inventory.Properties.Resources.whtbtn;
+            this.loginbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.loginbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginbtn.Location = new System.Drawing.Point(181, 298);
             this.loginbtn.Name = "loginbtn";
             this.loginbtn.Size = new System.Drawing.Size(159, 35);
@@ -78,6 +81,7 @@ namespace Event_inventory
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(195, 23);
             this.label1.Name = "label1";
@@ -88,36 +92,40 @@ namespace Event_inventory
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(138, 82);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 24);
+            this.label5.Size = new System.Drawing.Size(65, 24);
             this.label5.TabIndex = 15;
             this.label5.Text = "EMAIL";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(138, 150);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 24);
+            this.label2.Size = new System.Drawing.Size(113, 24);
             this.label2.TabIndex = 16;
             this.label2.Text = "USERNAME";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(138, 224);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 24);
+            this.label3.Size = new System.Drawing.Size(116, 24);
             this.label3.TabIndex = 17;
             this.label3.Text = "PASSWORD";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Blue;
             this.label4.Location = new System.Drawing.Point(131, 363);
@@ -131,8 +139,10 @@ namespace Event_inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(536, 459);
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackgroundImage = global::Event_inventory.Properties.Resources._32549261;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(532, 455);
             this.ControlBox = false;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -143,13 +153,12 @@ namespace Event_inventory
             this.Controls.Add(this.loginbtn);
             this.Controls.Add(this.passbox);
             this.Controls.Add(this.unamebox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Register";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Register";
             this.ResumeLayout(false);
             this.PerformLayout();
 

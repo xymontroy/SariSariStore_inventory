@@ -15,16 +15,9 @@ namespace Event_inventory
         {
             InitializeComponent();
             InitializeChart();
-            this.Paint += SalesStatistics_Paint;
+           
         }
-        private void SalesStatistics_Paint(object sender, PaintEventArgs e)
-        {
-            // Create a gradient background
-            using (var brush = new LinearGradientBrush(this.ClientRectangle, Color.White, Color.LightBlue, LinearGradientMode.Vertical))
-            {
-                e.Graphics.FillRectangle(brush, this.ClientRectangle);
-            }
-        }
+       
 
         private void chart1_Click(object sender, EventArgs e)
         {

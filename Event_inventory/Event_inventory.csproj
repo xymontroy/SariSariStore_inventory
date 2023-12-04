@@ -237,6 +237,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
@@ -408,6 +409,11 @@
     <Content Include="Event.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\whtbtn.jpg" />
+    <None Include="Resources\55940091.jpg" />
+    <None Include="Resources\32549261.jpg" />
+    <None Include="Resources\3254926.jpg" />
+    <None Include="Resources\5594009.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

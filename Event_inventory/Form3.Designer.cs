@@ -30,12 +30,12 @@ namespace Event_inventory
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +60,8 @@ namespace Event_inventory
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menuStrip1.BackColor = System.Drawing.Color.LightGray;
+            this.menuStrip1.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.homeToolStripMenuItem,
@@ -68,26 +69,27 @@ namespace Event_inventory
             this.reportsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(769, 30);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(769, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // homeToolStripMenuItem
             // 
-            this.homeToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.homeToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             this.homeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logoutToolStripMenuItem,
             this.scanningToolStripMenuItem});
-            this.homeToolStripMenuItem.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeToolStripMenuItem.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(72, 23);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.homeToolStripMenuItem.Text = "HOME";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
@@ -95,7 +97,7 @@ namespace Event_inventory
             // 
             this.scanningToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.scanningToolStripMenuItem.Name = "scanningToolStripMenuItem";
-            this.scanningToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
+            this.scanningToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.scanningToolStripMenuItem.Text = "Scanning";
             this.scanningToolStripMenuItem.Click += new System.EventHandler(this.scanningToolStripMenuItem_Click);
             // 
@@ -103,16 +105,16 @@ namespace Event_inventory
             // 
             this.salesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addItemsToolStripMenuItem});
-            this.salesToolStripMenuItem.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salesToolStripMenuItem.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
-            this.salesToolStripMenuItem.Size = new System.Drawing.Size(77, 23);
+            this.salesToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.salesToolStripMenuItem.Text = "SALES";
             // 
             // addItemsToolStripMenuItem
             // 
             this.addItemsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.addItemsToolStripMenuItem.Name = "addItemsToolStripMenuItem";
-            this.addItemsToolStripMenuItem.Size = new System.Drawing.Size(127, 26);
+            this.addItemsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addItemsToolStripMenuItem.Text = "POS";
             this.addItemsToolStripMenuItem.Click += new System.EventHandler(this.addItemsToolStripMenuItem_Click);
             // 
@@ -121,16 +123,16 @@ namespace Event_inventory
             this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inventoryToolStripMenuItem,
             this.salesStatisticsToolStripMenuItem});
-            this.reportsToolStripMenuItem.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportsToolStripMenuItem.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(103, 23);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
             this.reportsToolStripMenuItem.Text = "REPORTS";
             // 
             // inventoryToolStripMenuItem
             // 
             this.inventoryToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
-            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.inventoryToolStripMenuItem.Text = "Inventory";
             this.inventoryToolStripMenuItem.Click += new System.EventHandler(this.inventoryToolStripMenuItem_Click);
             // 
@@ -138,7 +140,7 @@ namespace Event_inventory
             // 
             this.salesStatisticsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.salesStatisticsToolStripMenuItem.Name = "salesStatisticsToolStripMenuItem";
-            this.salesStatisticsToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.salesStatisticsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.salesStatisticsToolStripMenuItem.Text = "Sales Statistics";
             this.salesStatisticsToolStripMenuItem.Click += new System.EventHandler(this.salesStatisticsToolStripMenuItem_Click);
             // 
@@ -151,21 +153,22 @@ namespace Event_inventory
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(284, 53);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(283, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 38);
+            this.label1.Size = new System.Drawing.Size(230, 40);
             this.label1.TabIndex = 1;
-            this.label1.Text = "WELCOME";
+            this.label1.Text = "DASHBOARD";
             // 
             // labelClock
             // 
             this.labelClock.AutoSize = true;
-            this.labelClock.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelClock.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClock.Location = new System.Drawing.Point(522, 3);
+            this.labelClock.BackColor = System.Drawing.Color.LightGray;
+            this.labelClock.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelClock.Location = new System.Drawing.Point(522, 4);
             this.labelClock.Name = "labelClock";
-            this.labelClock.Size = new System.Drawing.Size(55, 21);
+            this.labelClock.Size = new System.Drawing.Size(49, 20);
             this.labelClock.TabIndex = 2;
             this.labelClock.Text = "TIME";
             // 
@@ -176,21 +179,22 @@ namespace Event_inventory
             // 
             // chart1
             // 
+            this.chart1.BackColor = System.Drawing.Color.LightGray;
             this.chart1.BackImageTransparentColor = System.Drawing.Color.Transparent;
             this.chart1.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled;
             this.chart1.BackSecondaryColor = System.Drawing.Color.Transparent;
             this.chart1.BorderlineColor = System.Drawing.Color.DeepSkyBlue;
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(78, 122);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(608, 213);
             this.chart1.TabIndex = 5;
             this.chart1.Text = "chart1";
@@ -198,17 +202,18 @@ namespace Event_inventory
             // 
             // chart2
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart2.Legends.Add(legend4);
+            this.chart2.BackColor = System.Drawing.Color.LightGray;
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(78, 390);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart2.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(608, 318);
             this.chart2.TabIndex = 6;
             this.chart2.Text = "chart2";
@@ -216,20 +221,22 @@ namespace Event_inventory
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(73, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(223, 25);
+            this.label4.Size = new System.Drawing.Size(224, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "Product Expiration Chart";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(73, 360);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 25);
+            this.label2.Size = new System.Drawing.Size(119, 24);
             this.label2.TabIndex = 8;
             this.label2.Text = "Stocks Chart";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -239,6 +246,8 @@ namespace Event_inventory
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.BackgroundImage = global::Event_inventory.Properties.Resources._32549261;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(769, 720);
             this.ControlBox = false;
             this.Controls.Add(this.label2);
@@ -254,7 +263,6 @@ namespace Event_inventory
             this.Name = "Form3";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DASHBOARD";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
