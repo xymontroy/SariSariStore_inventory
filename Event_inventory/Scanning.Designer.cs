@@ -120,6 +120,7 @@ namespace Event_inventory
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Event_inventory.Properties.Resources._32549261;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(916, 419);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
